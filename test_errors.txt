@@ -1,0 +1,28 @@
+# Test 1: Invalid characters
+@variable = 42;
+
+# Test 2: Mismatched parentheses
+result = ((5 + 3);
+
+# Test 3: Missing semicolon
+x = 10
+
+# Test 4: Invalid operator combinations
+y = 5 ++ 3;
+z = 7 */ 2;
+
+# Test 5: Invalid identifiers
+123variable = 42;
+my-variable = 10;
+
+# Test 6: Unmatched closing parenthesis
+value = 5 + 3);
+
+# Test 7: Empty expression
+empty = ;
+
+# Test 8: Multiple decimal points
+number = 42.3.5;
+
+# Test 9: Invalid spacing
+a=1+2*3/4;

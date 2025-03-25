@@ -1,0 +1,19 @@
+// Test all arithmetic operators
+add = 5 + 3;
+subtract = 10 - 4;
+multiply = 6 * 2;
+divide = 15 / 3;
+
+// Test operator precedence and parentheses
+complex = (10 + 5) * (20 - 8) / 4;
+
+// Test multiple identifiers and numbers
+result1 = 42;
+result2 = 3;
+final_result = (result1 + result2) * (result1 - result2);
+
+// Test nested parentheses
+nested = ((10 + 5) * 2) + ((20 - 5) / 3);
+
+// Test all operators in one expression
+everything = (42 + 10 - 5) * 3 / 2;

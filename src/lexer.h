@@ -18,12 +18,22 @@ typedef enum {
     TOKEN_SEMICOLON
 } TokenType;
 
+// Error handling
+typedef enum {
+    ERROR_NONE,
+    ERROR_INVALID_CHAR,
+    ERROR_INVALID_IDENTIFIER,
+    ERROR_IDENTIFIER_STARTS_WITH_NUMBER,
+    ERROR_IDENTIFIER_TOO_LONG
+} LexerError;
+
 // Token structure
 typedef struct {
     TokenType type;
     char *value;
     int line;
     int column;
+    LexerError error;
 } Token;
 
 // Lexer structure
@@ -33,6 +43,7 @@ typedef struct {
     int line;
     int column;
     char current_char;
+    LexerError last_error;
 } Lexer;
 
 // Lexer functions
